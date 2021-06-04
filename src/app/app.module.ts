@@ -23,7 +23,7 @@ import { HeroSearchComponent } from './hero-search.component';
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
       dataEncapsulation: false,
-      delay: 300,
+      delay: 1000,
       passThruUnknownUrl: true
     })
   ],
