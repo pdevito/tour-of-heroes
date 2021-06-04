@@ -1,7 +1,8 @@
+@import 'src/assets/colors.scss';
+
 h1 {
   font-size: 1.2em;
-  color: #999;
-  color: #555;
+  color: $comp2;
   margin-bottom: 0;
 }
 h2 {

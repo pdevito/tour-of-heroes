@@ -1,7 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'src/assets/colors.scss';
 
-h2 { color: #444; font-weight: lighter; }
-body { margin: 2em; }
+* { font-family: Arial; }
+h2 {
+  color: $comp2;
+  font-weight: lighter;
+}
+body {
+  margin: 2em;
+  background-color: $bg;
+}
 body, input[text], button { color: #888; font-family: Cambria, Georgia; }
 button { padding: 0.2em; font-size: 14px}
-* { font-family: Arial; }

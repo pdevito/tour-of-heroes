@@ -2,7 +2,13 @@ $light-blue: #a5e4eb;
 $blue: #4286df;
 $dark-blue: #21318c;
 
-$bg: #112d4e;
-$comp1: #3f72af;
-$comp2: #dbe2ef;
-$text: #f9f7f7;
+// theme 22272 - https://colorhunt.co/palette/22272
+$theme-blue-1: #f9f7f7;
+$theme-blue-2: #dbe2ef;
+$theme-blue-3: #3f72af;
+$theme-blue-4: #112d4e;
+
+$bg: $theme-blue-4;
+$text: $theme-blue-1;
+$comp1: $theme-blue-3;
+$comp2: $theme-blue-2;
