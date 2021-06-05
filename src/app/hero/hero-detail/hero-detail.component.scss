@@ -1,3 +1,6 @@
+@import 'src/assets/colors.scss';
+$spacing: 20px;
+
 label {
   display: inline-block;
   width: 3em;
@@ -27,4 +30,9 @@ button:disabled {
   background-color: #eee;
   color: #ccc;
   cursor: auto;
+}
+
+.hero-details {
+  display: flex;
+  flex-direction: column;
 }

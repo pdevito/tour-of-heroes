@@ -1,9 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
-@import '../node_modules/bootstrap/scss/bootstrap';
+// @import '../node_modules/bootstrap/scss/bootstrap';
 @import 'assets/colors.scss';
 
 
 * { font-family: Arial; }
+h1 {
+  text-align: center;
+}
 h2 {
   color: $comp2;
   font-weight: lighter;

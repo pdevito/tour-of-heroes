@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule, InMemoryDbService } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './shared/in-memory-data.service';
 // import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -25,7 +26,8 @@ import { HeroSearchComponent } from './hero/hero-search/hero-search.component';
       dataEncapsulation: false,
       delay: 1000,
       passThruUnknownUrl: true
-    })
+    }),
+    NgxSkeletonLoaderModule.forRoot()
   ],
   declarations: [
     AppComponent,
