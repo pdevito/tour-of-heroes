@@ -7,7 +7,7 @@ import {
   distinctUntilChanged,
   switchMap
 } from 'rxjs/operators';
-import { Hero } from './hero';
+import { Hero } from 'app/hero/hero';
 import { HeroSearchService } from './hero-search.service';
 
 @Component({

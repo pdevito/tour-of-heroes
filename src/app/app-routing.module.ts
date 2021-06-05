@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { DashboardComponent } from './dashboard.component';
-import { HeroesComponent } from './heroes.component';
-import { HeroDetailComponent } from './hero-detail.component';
+import { DashboardComponent } from 'app/dashboard/dashboard.component';
+import { HeroesComponent } from 'app/hero/heroes.component';
+import { HeroDetailComponent } from 'app/hero/hero-detail/hero-detail.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
