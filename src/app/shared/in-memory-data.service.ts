@@ -10,7 +10,7 @@ export class InMemoryDataService implements InMemoryDbService {
     const heroes: Hero[] = [
       {
         id: 1,
-        name: "DMertz",
+        name: "DMan",
         alignment: "lawful neutral",
         age: 20,
         occupation: "Instructor of Machine Speak",
@@ -88,6 +88,14 @@ export class InMemoryDataService implements InMemoryDbService {
         occupation: "Servant of the Book and the One With the Gun",
         trait: "Rough",
       },
+      {
+        id: 11,
+        name: "Teto",
+        alignment: "neutral neutral",
+        age: 7,
+        occupation: "Fox Squirrel",
+        trait: "Wild, Untameable"
+      }
     ];
     return { heroes };
   }

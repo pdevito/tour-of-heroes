@@ -14,6 +14,13 @@ export class HeroDetailComponent implements OnInit {
   error: any;
   navigated = false; // true if navigated here
 
+  skelTheme = {
+    width: '200px',
+    height: '26px',
+    'background-color': '#4286df',
+    'margin': '10px'
+  };
+
   constructor(
     private heroService: HeroService,
     private route: ActivatedRoute

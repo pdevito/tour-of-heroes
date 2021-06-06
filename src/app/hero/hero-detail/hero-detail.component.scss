@@ -2,16 +2,14 @@
 $spacing: 20px;
 
 label {
-  display: inline-block;
-  width: 3em;
-  margin: .5em 0;
+  // display: inline-block;
   color: #607D8B;
   color: rgb(0,120,215);
   font-weight: bold;
+  margin-bottom: 10px;
 }
 input {
   height: 2em;
-  font-size: 1em;
   padding-left: .4em;
 }
 button {
@@ -32,7 +30,39 @@ button:disabled {
   cursor: auto;
 }
 
-.hero-details {
+.hero-details-section {
   display: flex;
   flex-direction: column;
+}
+
+.hero-details-row {
+  display: flex;
+  align-items: center;
+}
+
+.skeleton-section {
+  min-width: 535px;
+
+  li, li .inline {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .skeleton-header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+}
+
+article.hero-details {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+
+  ul.hero-info {
+    list-style: none;
+    padding-left: 0;
+  }
 }
