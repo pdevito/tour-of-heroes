@@ -1,4 +1,4 @@
-<section *ngIf="hero; else skeleton" class="hero-details-section">
+<section *ngIf="hero" class="hero-details-section">
   <h2 [attr.data-text]="hero.name + ' Details'">{{hero.name}} Details</h2>
   <article class="hero-details">
     <ul class="hero-info">
@@ -14,65 +14,44 @@
       <li *ngIf="hero.occupation"><p>Occupation: {{hero.occupation}}</p></li>
     </ul>
   </article>
-  <div>
-    <button (click)="goBack()">Back</button>
-    <button (click)="save()">Save</button>
-  </div>
 </section>
 
-<ng-template #skeleton>
-  <section class="skeleton-section">
-    <div>
-      <ngx-skeleton-loader animation='progress' [theme]="{
-        'border-radius': '0',
-        'background-color': '#4286df',
-        'margin': '10px'
-      }"></ngx-skeleton-loader>
-      <h2 data-text="Details"> Details</h2>
-    </div>
-    <article class="hero-details">
-      <ul class="hero-info">
-        <li>
-          <label class="edit-field inline">Hero Name:
-            <ngx-skeleton-loader animation='progress' [theme]="skelTheme"></ngx-skeleton-loader>
-          </label>
-        </li>
-        <li>Hero ID:
-          <ngx-skeleton-loader animation='progress' [theme]="skelTheme"></ngx-skeleton-loader>
-        </li>
-        <li>Alignment:
-          <ngx-skeleton-loader animation='progress' [theme]="skelTheme"></ngx-skeleton-loader>
-        </li>
-        <li>Age:
-          <ngx-skeleton-loader animation='progress' [theme]="skelTheme"></ngx-skeleton-loader>
-        </li>
-        <li>
-          <p>Traits:
-            <ngx-skeleton-loader id="hero-traits" animation='progress' count='5' [theme]="{
-              width: '580px',
-              height: '23px',
-              'border-radius': '0',
-              'background-color': '#4286df',
-              'margin': '10px'
-            }"></ngx-skeleton-loader>
-          </p>
-        </li>
-        <li>
-          <p>Occupation:
-            <ngx-skeleton-loader id="hero-occupation" animation='progress' [theme]="{
-              width: '200px',
-              height: '45px',
-              'border-radius': '0',
-              'background-color': '#4286df',
-              'margin': '10px'
-            }"></ngx-skeleton-loader>
-          </p>
-        </li>
-      </ul>
-    </article>
-    <div>
-      <button (click)="goBack()">Back</button>
-      <button (click)="save()">Save</button>
-    </div>
-  </section>
-</ng-template>
+<section *ngIf="!hero" class="skeleton-section">
+  <div class="skeleton-header">
+    <ngx-skeleton-loader animation='progress' [theme]="skelHeader"></ngx-skeleton-loader>
+    <h2 data-text="Details"> Details</h2>
+  </div>
+  <article class="hero-details">
+    <ul class="hero-info">
+      <li>
+        <label class="edit-field inline">Hero Name:
+          <ngx-skeleton-loader animation='progress' [theme]="skelLabel"></ngx-skeleton-loader>
+        </label>
+      </li>
+      <li>Hero ID:
+        <ngx-skeleton-loader animation='progress' [theme]="skelTxt"></ngx-skeleton-loader>
+      </li>
+      <li>Alignment:
+        <ngx-skeleton-loader animation='progress' [theme]="skelTxt"></ngx-skeleton-loader>
+      </li>
+      <li>
+        <ngx-skeleton-loader animation='progress' [theme]="skelTxt"></ngx-skeleton-loader>
+      </li>
+      <li>
+        <p>
+          <ngx-skeleton-loader animation='progress' count='3' [theme]="skelTxtBlock"></ngx-skeleton-loader>
+        </p>
+      </li>
+      <li>
+        <p>
+          <ngx-skeleton-loader animation='progress' count='3' [theme]="skelTxtBlock"></ngx-skeleton-loader>
+        </p>
+      </li>
+    </ul>
+  </article>
+</section>
+
+<div>
+  <button (click)="goBack()">Back</button>
+  <button (click)="save()">Save</button>
+</div>

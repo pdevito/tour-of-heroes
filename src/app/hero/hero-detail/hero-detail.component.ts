@@ -14,12 +14,31 @@ export class HeroDetailComponent implements OnInit {
   error: any;
   navigated = false; // true if navigated here
 
-  skelTheme = {
+  skelHeader = {
+    width: '180px',
+    'border-radius': '0',
+    'background-color': '#4286df',
+    'margin-top': '10px'
+  };
+  skelLabel = {
     width: '200px',
-    height: '26px',
+    height: '16px',
     'background-color': '#4286df',
     'margin': '10px'
   };
+  skelTxt = {
+    width: '200px',
+    height: '16px',
+    'background-color': '#4286df',
+    'margin': '10px'
+  };
+  skelTxtBlock = {
+    width: '580px',
+    height: '16px',
+    'border-radius': '0',
+    'background-color': '#4286df',
+    'margin': '10px'
+  }
 
   constructor(
     private heroService: HeroService,
